@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* border: 2px solid orange; */
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 50px 1fr;
+
+  grid-template-areas:
+    "nav header header"
+    "nav main main"
+    "nav footer footer";
+}
+
+header {
+  grid-area: header;
+  border: 5px solid pink;
+}
+
+nav {
+  grid-area: nav;
+  border: 5px solid green;
+}
+
+main {
+  grid-area: main;
+  background-color: #848484;
+}
+
+footer {
+  grid-area: footer;
+  border: 5px solid rgb(128, 0, 0);
+}
